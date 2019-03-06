@@ -1,6 +1,6 @@
 language: go
 go:
-  - 1.11.x
+  - 1.11.5
 before_script:
   - export PATH="$PATH:$(go env GOROOT)/misc/wasm"
 before_install:
