@@ -2,11 +2,6 @@ language: go
 go:
   - 1.11.x
 before_script:
-  - unset GOROOT
-  - wget -O go.tar.gz https://dl.google.com/go/go1.11.4.linux-amd64.tar.gz
-  - mkdir ~/gocode
-  - tar -C ~/gocode -xzf go.tar.gz
-  - export PATH=~/gocode/go/bin:$PATH
   - export PATH="$PATH:$(go env GOROOT)/misc/wasm"
 before_install:
   - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
